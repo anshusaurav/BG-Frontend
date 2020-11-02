@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap");
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, de
+
+//reset start here 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Fira Sans", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+//reset ends here
+
+.form-container {
+  background-color: transparent;
+
+  min-height: 100vh;
+  position: relative;
+  .form-complete-div {
+    width: 100%;
+    padding: 0px;
+    overflow: visible;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  .form-container-outer-div {
+    width: 480px;
+    max-width: 90%;
+    .form-container-inner-div {
+      margin-top: 2rem;
+      // padding: 25px 40px;
+      background-color: #ffffff;
+      border-radius: 3px;
+      padding: 25px 40px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    }
+    h2 {
+      text-align: center;
+      text-align: center;
+      color: #5e6c84;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+      line-height: 28px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+    input {
+      border: 2px solid #dfe1e6 !important;
+      background-color: #fafbfc !important;
+      margin-bottom: 1rem !important;
+    }
+  }
+  .trello-main-logo {
+    display: block;
+    height: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    //   vertical-align: middle;
+  }
+  form {
+    z-index: 100;
+  }
+  .form-extra-links,
+  .form-extra-links-single {
+    display: grid;
+    // padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    .form-link {
+      font-size: 14px;
+      text-decoration: none;
+      color: #0052cc;
+      text-align: center;
+    }
+    a {
+      // align-self: center;
+      justify-self: center;
+    }
+    .remove-design-btn {
+      background-color: transparent;
+      font-size: 14px;
+      font-weight: 400;
+      // color: #2e394f;
+      &:active {
+        background-color: transparent;
+      }
+      &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      &:visited {
+        background-color: transparent;
+      }
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+  .form-extra-links-single {
+    grid-template-columns: 1fr;
+    .form-link {
+      font-weight: 400;
+    }
+  }
+  .background {
+    z-index: -900;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #f9fafc;
+
+    .leftLarge {
+      position: absolute;
+      width: 400px;
+      bottom: 0;
+      left: 0;
+      z-index: -999;
+      max-width: 30%;
+    }
+    .rightLarge {
+      position: absolute;
+      width: 400px;
+      bottom: 0;
+      right: 0;
+      z-index: -999;
+      max-width: 30%;
+    }
+  }
+}
+
+//Login page signup page forgot password page ends here
+.container-home {
+  min-height: 100vh;
+  // width: 80%;
+  max-width: 948px;
+  margin: 0 auto;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: baseline;
+    line-height: 20px;
+  }
+  .videos-wrapper {
+    max-width: 948px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    // grid-auto-rows: 400px;
+    grid-gap: 1rem;
+    video {
+      overflow: hidden;
+    }
+    .single-video {
+      display: flex;
+      justify-content: center;
+    }
+    @media all and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.icon {
+  cursor: pointer !important;
+}
+.card {
+  justify-self: center !important;
+  margin-top: 0 !important;
+}
