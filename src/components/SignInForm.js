@@ -34,7 +34,7 @@ class SignInForm extends React.Component {
         const { email, password } = this.state
         const { history, toggleLoggedIn } = this.props
         const user = { user: { email, password } }
-        const url = 'http://localhost:4000/api/user/login'
+        const url = 'https://bg-backend-task.herokuapp.com/api/user/login'
 
         try {
             const response = await fetch(url, {

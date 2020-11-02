@@ -7,9 +7,7 @@ const repeat = (a, n) => Array(n).fill(a).flat();
 class Home extends React.Component {
     state = { videos: null }
     saveVideos = async () => {
-
-        const url = 'http://localhost:4000/api/user/videos'
-
+        const url = 'https://bg-backend-task.herokuapp.com/api/user/videos'
         try {
             const response = await fetch(url, {
                 method: 'GET',
